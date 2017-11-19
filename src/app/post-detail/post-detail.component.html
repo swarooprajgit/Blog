@@ -1,0 +1,8 @@
+<div class="box">
+  <a style="color: dimgray ; font-family:'Comic Sans MS'">{{oneblog.id}}..........{{oneblog.title}}</a>
+  <button (click)="deletepost()">delete</button>
+  <button [routerLink]="['/editblog',oneblog.id]">edit</button>
+  <br>
+  <a>{{oneblog.post}}</a><br>
+  <cite style="float: right">-{{oneblog.author}}</cite>
+</div>

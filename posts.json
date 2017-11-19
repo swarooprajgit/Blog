@@ -1,0 +1,116 @@
+{
+  "posts": [
+    {
+      "post": "ggggggggggggggggggg",
+      "image": "hhh",
+      "author": "dsfgsdf",
+      "title": "edited text",
+      "category": "politics",
+      "user_ratings": 0,
+      "id": 13
+    },
+    {
+      "post": "change category to tech",
+      "image": "kakfkf",
+      "author": "dsfgsdf",
+      "title": "edited",
+      "user_ratings": 0,
+      "id": 14,
+      "category": "Tech"
+    },
+    {
+      "post": "aksdlkds",
+      "image": "lkjakjdjksa",
+      "author": "dsfgsdf",
+      "title": "with category",
+      "user_ratings": 0,
+      "id": 15
+    },
+    {
+      "post": "ttttttt",
+      "image": "tttttttt",
+      "author": "dsfgsdf",
+      "title": "ttttt",
+      "user_ratings": 16,
+      "id": 16
+    },
+    {
+      "post": "ddd",
+      "image": "ddd",
+      "author": "dsfgsdf",
+      "title": "ddd",
+      "user_ratings": 0,
+      "id": 17
+    },
+    {
+      "post": "sdfsdfsdf",
+      "image": "fsdfsdf",
+      "author": "dsfgsdf",
+      "title": "sfsdfds",
+      "user_ratings": 0,
+      "id": 18
+    },
+    {
+      "post": "sss",
+      "image": "sss",
+      "author": "dsfgsdf",
+      "title": "ssss",
+      "user_ratings": 0,
+      "id": 19
+    },
+    {
+      "post": "ksfdkdfsk",
+      "image": "sfkdkdfsk",
+      "author": "dsfgsdf",
+      "title": "skddkf",
+      "category": "Tech",
+      "user_ratings": 0,
+      "id": 20
+    },
+    {
+      "post": "jdsjdsjsjd",
+      "image": "sdjsdjsdj",
+      "author": "dsfgsdf",
+      "title": "djdjsdjsd",
+      "category": "politics",
+      "user_ratings": 21,
+      "id": 21
+    },
+    {
+      "post": "politics",
+      "image": "jashajddhas",
+      "author": "dsfgsdf",
+      "title": "politics",
+      "category": "politics",
+      "user_ratings": 22,
+      "id": 22
+    },
+    {
+      "post": "politics",
+      "image": "jashajddhas",
+      "author": "dsfgsdf",
+      "title": "politics",
+      "category": "politics",
+      "user_ratings": 2,
+      "id": 23
+    },
+    {
+      "post": "hasfhkasdhkashk5555",
+      "image": "fasfds",
+      "author": "dsfgsdf",
+      "title": "politics 333",
+      "category": "politics",
+      "user_ratings": 0,
+      "id": 24
+    },
+    {
+      "post": "education",
+      "image": "education",
+      "author": "dsfgsdf",
+      "title": "education",
+      "category": "education",
+      "user_ratings": 0,
+      "id": 25
+    }
+  ]
+}

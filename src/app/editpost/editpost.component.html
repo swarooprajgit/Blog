@@ -1,0 +1,20 @@
+<h4>Edit Post</h4>
+<br>
+<h5>Title</h5>
+<input class="" type="text" [(ngModel)]="title" value={{editblog.title}}>
+<br>
+<h5>Body</h5>
+<input class="" type="text" [(ngModel)]="body" value={{editblog.post}}>
+<br>
+<h5>Featured URL</h5>
+<input class="url" type="text" [(ngModel)]="url" placeholder="http://placekitten.com/200/300" value={{editblog.img}}>
+<br>
+<div>Category :
+  <select type = "text" [(ngModel)]= "category" #sdda>
+    <option value="politics">Politics</option>
+    <option value="tech">Tech</option>
+    <option value="education">Education</option>
+    <option value="other">Other</option>
+  </select>
+</div>
+<button type="submit" name="action" (click)="edit(title,body,'dsfgsdf',url,sdda.value)">Save Changes</button>

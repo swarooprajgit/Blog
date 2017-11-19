@@ -1,0 +1,15 @@
+<!--<div style="position: absolute "><h3 style="color: #4CAF50">Popular posts</h3></div>-->
+<div class="box" style="overflow: scroll ; overflow-y: scroll">Popular posts
+  <div><ul *ngFor='let post of popblog'>
+    <li>
+      <!--<img [src] = 'post.image' style="width: 100% ; height: 40% ;border-radius: inherit">-->
+      <a>{{post.id}}</a>
+      <a [routerLink]="['/posts',post.id]">{{post.title}}</a>
+      <!--<button (click)="delete_post(post)">delete</button>-->
+      <!--<button [routerLink]="['/editblog',post.id]">Edit</button>-->
+      <br>
+      <a>{{post.post}}</a><br>
+      <a><cite>~{{post.author}}</cite></a>
+    </li>
+  </ul></div>
+</div>

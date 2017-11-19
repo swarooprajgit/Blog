@@ -1,0 +1,18 @@
+<body>
+<nav class="custom-nav-class" ngStickyNav>
+  <div class ="dropbtn dropdown"><a [routerLink] = "['/posts']">Home</a></div>
+  <a class="dropdown">
+    <button class="dropbtn">Category</button>
+    <div class="dropdown-content">
+      <a [routerLink] = "['/category', 'politics']">Politics</a>
+      <a [routerLink] = "['/category','education']">Education</a>
+      <a [routerLink] = "['/category','tech']">Tech</a>
+      <a [routerLink] = "['/category','other']">Other</a>
+    </div>
+  </a>
+  <a class="dropbtn">Contact</a>
+</nav>
+<router-outlet></router-outlet>
+<app-popular style="position: fixed;  top: 50px;  right: 50px; display: block"></app-popular>
+<button id="addbtn" class="w3-button w3-xlarge w3-circle w3-red w3-card-4" [routerLink] = "['/addblog']">+</button>
+</body>

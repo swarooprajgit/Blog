@@ -1,0 +1,12 @@
+<div *ngFor='let post of posts'>
+  <div class="box">
+    <!--<img [src] = 'post.image' style="width: 100% ; height: 40% ;border-radius: inherit">-->
+    <a>{{post.id}}</a>
+    <a [routerLink]="['/posts',post.id]">{{post.title}}</a>
+    <button (click)="delete_post(post)">delete</button>
+    <button [routerLink]="['/editblog',post.id]">Edit</button>
+    <br>
+    <a>{{post.post}}</a><br>
+    <a><cite>~{{post.author}}</cite></a>
+  </div>
+</div>

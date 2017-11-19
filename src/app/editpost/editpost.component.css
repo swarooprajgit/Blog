@@ -1,0 +1,16 @@
+.box {
+  transition: box-shadow .3s;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  /*float: left;*/
+  overflow: scroll;
+  overflow-y: scroll;
+
+}
+.box:hover {
+  box-shadow: 0 0 100px ;
+}

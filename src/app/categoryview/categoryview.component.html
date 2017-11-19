@@ -1,0 +1,21 @@
+<div *ngFor='let post of catblog'>
+  <div *ngIf="post.category == category" class="box">
+    <!--<img [src] = 'post.image' style="width: 100% ; height: 40% ;border-radius: inherit">-->
+    <a>{{post.id}}</a>
+    <a [routerLink]="['/posts',post.id]">{{post.title}}</a>
+    <button (click)="delete_post(post)">delete</button>
+    <button [routerLink]="['/editblog',post.id]">Edit</button>
+    <br>
+    <a>{{post.post}}</a><br>
+    <a><cite>~{{post.author}}</cite></a>
+  </div>
+</div>
+
+<!--<div class="box">-->
+  <!--<a style="color: dimgray ; font-family:'Comic Sans MS'">{{catblog.id}}..........{{catblog.title}}</a>-->
+  <!--<button (click)="deletepost()">delete</button>-->
+  <!--<button [routerLink]="['/editblog',oneblog.id]">edit</button>-->
+  <!--<br>-->
+  <!--<a>{{catblog.post}}</a><br>-->
+  <!--<cite style="float: right">-{{catblog.author}}</cite>-->
+<!--</div>-->
