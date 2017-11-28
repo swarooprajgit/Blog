@@ -1,54 +1,13 @@
 {
   "posts": [
     {
-      "post": "ggggggggggggggggggg",
-      "image": "hhh",
-      "author": "dsfgsdf",
-      "title": "edited text",
-      "category": "politics",
-      "user_ratings": 0,
-      "id": 13
-    },
-    {
-      "post": "change category to tech",
-      "image": "kakfkf",
-      "author": "dsfgsdf",
-      "title": "edited",
-      "user_ratings": 0,
-      "id": 14,
-      "category": "Tech"
-    },
-    {
-      "post": "aksdlkds",
-      "image": "lkjakjdjksa",
-      "author": "dsfgsdf",
-      "title": "with category",
-      "user_ratings": 0,
-      "id": 15
-    },
-    {
-      "post": "ttttttt",
-      "image": "tttttttt",
-      "author": "dsfgsdf",
-      "title": "ttttt",
-      "user_ratings": 16,
-      "id": 16
-    },
-    {
-      "post": "ddd",
-      "image": "ddd",
-      "author": "dsfgsdf",
-      "title": "ddd",
-      "user_ratings": 0,
-      "id": 17
-    },
-    {
-      "post": "sdfsdfsdf",
+      "post": "sdfsdfsdfdsjuaijijdsakjdsakjsdajkijdsijsdaijdsaiajijdasijdsjksjkkasj",
       "image": "fsdfsdf",
       "author": "dsfgsdf",
       "title": "sfsdfds",
       "user_ratings": 0,
-      "id": 18
+      "id": 18,
+      "category": ""
     },
     {
       "post": "sss",
@@ -84,15 +43,6 @@
       "category": "politics",
       "user_ratings": 22,
       "id": 22
-    },
-    {
-      "post": "politics",
-      "image": "jashajddhas",
-      "author": "dsfgsdf",
-      "title": "politics",
-      "category": "politics",
-      "user_ratings": 2,
-      "id": 23
     },
     {
       "post": "hasfhkasdhkashk5555",

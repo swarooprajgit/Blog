@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {RestService} from '../rest.service';
 import {Blog} from '../blog';
 import {post} from 'selenium-webdriver/http';
-import {any} from "codelyzer/util/function";
+import {any} from 'codelyzer/util/function';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-addpost',
@@ -12,7 +13,7 @@ import {any} from "codelyzer/util/function";
 export class AddpostComponent implements OnInit {
 
   id: number;
-  constructor(private _restcall: RestService) { }
+  constructor(private _restcall: RestService, private _router: Router ) { }
 
   ngOnInit() {  }
 
@@ -29,7 +30,8 @@ export class AddpostComponent implements OnInit {
     };
     console.log(blogpost);
     this._restcall.postData(blogpost).subscribe();
-    location.replace('http://localhost:4200/posts');
+    this._router.navigate(['/posts']);
+    location.reload();
   }
 
 }

@@ -6,11 +6,28 @@
   border-radius:10px;
   border: 1px solid #ccc;
   background: #fff;
-  float: left;
+  /*float: left;*/
   overflow: scroll;
   overflow-y: scroll;
 
 }
 .box:hover {
   box-shadow: 0 0 100px ;
+}
+.inp{
+  size: auto;
+  width: 60%;
+  height: 300px;
+}
+
+.title{
+  color: white;
+  rows:1;
+  cols:8;
+}
+.inpe{
+  size: auto;
+  width: 60%;
+  rows:1;
+  cols:1;
 }

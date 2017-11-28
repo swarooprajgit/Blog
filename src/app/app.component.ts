@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  reload(category) {
+    location.assign('http://localhost:4200/category/' + category);
+
+  }
 }

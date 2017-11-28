@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {RestService} from '../rest.service';
+import {Blog} from '../blog';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-allposts',
@@ -17,15 +19,15 @@ export class AllpostsComponent implements OnInit {
   }
   set listFilter(value: string) {
     this._listFilter = value;
-    // this.filteredPosts = this.listFilter ? this.performFilter(this.listFilter) : this.posts;
+    this.filteredPosts = this.listFilter ? this.performFilter(this.listFilter) : this.posts;
   }
 
-  constructor(private _restcall: RestService) { }
-  // performFilter(filterBy: string): IPost[] {
-  //   filterBy = filterBy.toLocaleLowerCase();
-  //   return this.posts.filter((post: IPost) =>
-  //     post.title.toLocaleLowerCase().indexOf(filterBy) !== -1);
-  // }
+  constructor(private _restcall: RestService, private _router: Router) { }
+  performFilter(filterBy: string): Object[] {
+    filterBy = filterBy.toLocaleLowerCase();
+    return this.posts.filter((post: Blog) =>
+      post.title.toLocaleLowerCase().indexOf(filterBy) !== -1);
+  }
   ngOnInit() {
     this._restcall.getPosts().subscribe((posts) => {
       this.posts = posts;
@@ -35,7 +37,8 @@ export class AllpostsComponent implements OnInit {
   }
   delete_post(deleteblog) {
     this._restcall.deleteBlog(deleteblog).subscribe();
-    location.replace('http://localhost:4200/posts');
-    // this.route.navigate(['/posts']);
+    // location.replace('http://localhost:4200/posts');
+    this._router.navigate(['/posts']);
+    location.reload();
   }
 }

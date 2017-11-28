@@ -1,13 +1,13 @@
 <body>
-<nav class="custom-nav-class" ngStickyNav>
+<nav class="custom-nav-class" ngStickyNav style="background-color: #4CAF50 ; width: 100%">
   <div class ="dropbtn dropdown"><a [routerLink] = "['/posts']">Home</a></div>
   <a class="dropdown">
     <button class="dropbtn">Category</button>
     <div class="dropdown-content">
-      <a [routerLink] = "['/category', 'politics']">Politics</a>
-      <a [routerLink] = "['/category','education']">Education</a>
-      <a [routerLink] = "['/category','tech']">Tech</a>
-      <a [routerLink] = "['/category','other']">Other</a>
+      <a (click)="reload('politics')">Politics</a>
+      <a (click)="reload('education')">Education</a>
+      <a (click)="reload('tech')">Tech</a>
+      <a (click)="reload('other')">Other</a>
     </div>
   </a>
   <a class="dropbtn">Contact</a>

@@ -1,20 +1,20 @@
-<!--<link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">-->
-<h4>Add New Post</h4>
+<h4 class="title">Add new Post</h4>
 <br>
-<input class="box" type="text" [(ngModel)]="title" placeholder="title">
+<h5 class="title">Title</h5>
+<textarea class="inpe" type="text" [(ngModel)]="title" value={{editblog.title}}></textarea>
 <br>
-<input class="box" type="text" [(ngModel)]="body" placeholder="blog">
+<h5 class="title">Body</h5>
+<textarea class="inp" type="text" [(ngModel)]="body" value={{editblog.post}}></textarea>
 <br>
-<input class="url" type="text" [(ngModel)]="url" placeholder="imageurl">
+<h5 class="title">Featured URL</h5>
+<input class="url" type="text" [(ngModel)]="url" placeholder="http://placekitten.com/200/300" value={{editblog.img}}>
 <br>
-<div>Category :
-  <select type = "text" #sdda>
+<div class="title">Category :
+  <select type = "text" [(ngModel)]= "category" #sdda>
     <option value="politics">Politics</option>
     <option value="tech">Tech</option>
     <option value="education">Education</option>
     <option value="other">Other</option>
   </select>
-  <!--<b>Category    :</b>-->
-  <!--<input class="category" [(ngModel)]="category" placeholder="Politics / General / Econamics / Humanity /Tech">-->
 </div>
 <button type="submit" name="action" (click)="addblog(title,body,'dsfgsdf',url,0,sdda.value)">Submit</button>

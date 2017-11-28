@@ -17,7 +17,7 @@ export class RestService {
     return this._http.post(_blogURL, data).map(res => res.json());
   }
   updateBlog(data) {
-    return this._http.patch(_blogURL + data.id, data, header).map(res => res.json());
+    return this._http.patch(_blogURL + data.id, data).map(res => res.json());
   }
   deleteBlog(data) {
     return this._http.delete(_blogURL + data.id).map(res => res.json()) ;

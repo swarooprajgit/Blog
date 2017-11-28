@@ -1,15 +1,15 @@
 <h4>Edit Post</h4>
 <br>
-<h5>Title</h5>
-<input class="" type="text" [(ngModel)]="title" value={{editblog.title}}>
+<h5 class="title">Title</h5>
+<textarea class="inpe" type="text" [(ngModel)]="title" value={{editblog.title}}></textarea>
 <br>
-<h5>Body</h5>
-<input class="" type="text" [(ngModel)]="body" value={{editblog.post}}>
+<h5 class="title">Body</h5>
+<textarea class="inp" type="text" [(ngModel)]="body" value={{editblog.post}}></textarea>
 <br>
-<h5>Featured URL</h5>
+<h5 class="title">Featured URL</h5>
 <input class="url" type="text" [(ngModel)]="url" placeholder="http://placekitten.com/200/300" value={{editblog.img}}>
 <br>
-<div>Category :
+<div class="title">Category :
   <select type = "text" [(ngModel)]= "category" #sdda>
     <option value="politics">Politics</option>
     <option value="tech">Tech</option>

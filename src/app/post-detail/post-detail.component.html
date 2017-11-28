@@ -1,4 +1,4 @@
-<div class="box">
+<div class="box" style="overflow: auto">
   <a style="color: dimgray ; font-family:'Comic Sans MS'">{{oneblog.id}}..........{{oneblog.title}}</a>
   <button (click)="deletepost()">delete</button>
   <button [routerLink]="['/editblog',oneblog.id]">edit</button>

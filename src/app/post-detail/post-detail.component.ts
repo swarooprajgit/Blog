@@ -23,7 +23,7 @@ export class PostDetailComponent implements OnInit {
 
   deletepost() {
     this._getone.deleteBlog(this.oneblog).subscribe();
-    location.replace('http://localhost:4200/posts');
-    // this.route.navigate(['/posts']);
+    // location.replace('http://localhost:4200/posts');
+    this.route.navigate(['/posts']);
   }
 }

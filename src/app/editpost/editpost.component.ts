@@ -31,6 +31,7 @@ export class EditpostComponent implements OnInit {
     };
     console.log(edits);
     this._getone.updateBlog(edits).subscribe();
-    location.replace('http://localhost:4200/posts/' + this.id);
+    this.route.navigate(['/posts/' + this.id]);
+    location.reload();
   }
 }
