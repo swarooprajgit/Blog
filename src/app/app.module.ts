@@ -11,9 +11,9 @@ import { AddpostComponent } from './addpost/addpost.component';
 import {RestService} from './rest.service';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
-import {StickyNavModule} from 'ng2-sticky-nav/dist';
 import { EditpostComponent } from './editpost/editpost.component';
 import { CategoryviewComponent } from './categoryview/categoryview.component';
+import { HashLocationStrategy,  LocationStrategy } from '@angular/common';
 
 
 @NgModule({
@@ -30,7 +30,6 @@ import { CategoryviewComponent } from './categoryview/categoryview.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    StickyNavModule,
     RouterModule.forRoot([
       {path: 'posts', component: AllpostsComponent},
       {path: 'posts/:id', component: PostDetailComponent},
@@ -39,7 +38,7 @@ import { CategoryviewComponent } from './categoryview/categoryview.component';
       {path: 'category/:id', component: CategoryviewComponent},
     ])
   ],
-  providers: [RestService],
+  providers: [RestService, { provide:  LocationStrategy,  useClass:  HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

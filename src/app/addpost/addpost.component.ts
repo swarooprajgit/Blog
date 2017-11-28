@@ -13,6 +13,7 @@ import {Router} from '@angular/router';
 export class AddpostComponent implements OnInit {
 
   id: number;
+
   constructor(private _restcall: RestService, private _router: Router ) { }
 
   ngOnInit() {  }

@@ -1,20 +1,20 @@
 <h4 class="title">Add new Post</h4>
 <br>
 <h5 class="title">Title</h5>
-<textarea class="inpe" type="text" [(ngModel)]="title" value={{editblog.title}}></textarea>
+<textarea class="inpe" type="text" #title1></textarea>
 <br>
 <h5 class="title">Body</h5>
-<textarea class="inp" type="text" [(ngModel)]="body" value={{editblog.post}}></textarea>
+<textarea class="inp" type="text" #body1></textarea>
 <br>
 <h5 class="title">Featured URL</h5>
-<input class="url" type="text" [(ngModel)]="url" placeholder="http://placekitten.com/200/300" value={{editblog.img}}>
+<input class="url" type="text" #url placeholder="http://placekitten.com/200/300" >
 <br>
 <div class="title">Category :
-  <select type = "text" [(ngModel)]= "category" #sdda>
+  <select type = "text" #sdda>
     <option value="politics">Politics</option>
     <option value="tech">Tech</option>
     <option value="education">Education</option>
     <option value="other">Other</option>
   </select>
 </div>
-<button type="submit" name="action" (click)="addblog(title,body,'dsfgsdf',url,0,sdda.value)">Submit</button>
+<button type="submit" name="action" (click)="addblog(title1.value , body1.value ,'user' , url.value,0,sdda.value)">Submit</button>

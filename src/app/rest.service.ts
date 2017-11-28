@@ -3,7 +3,7 @@ import {Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Observable';
 
-const _blogURL = 'http://localhost:3000/posts/';
+const _blogURL = 'https://blog-site-swaroop.herokuapp.com/posts';
 const header = {headers: new Headers ({'Content-Type': 'application/json'})};
 
 @Injectable()
